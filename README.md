@@ -16,7 +16,7 @@ It includes authentication (Firebase), property search & filtering, and a clean 
 ## ⚙️ Setup Instructions
 
 1️⃣ Clone the repository
-```bash
+bash
 git clone https://github.com/your-username/estateapp.git
 cd estateapp
 2️⃣ Install dependencies
