@@ -12,11 +12,22 @@ It includes authentication (Firebase), property search & filtering, and a clean 
 - 🌐 Fast and modern React (Vite + Tailwind CSS)
 
 ---
+🛠️ Tech Stack
+
+React (Vite)
+
+Tailwind CSS
+
+Firebase Auth
+
+Netlify (Hosting)
+
+---
 
 ## ⚙️ Setup Instructions
-
+```bash
 1️⃣ Clone the repository
-bash
+
 git clone https://github.com/your-username/estateapp.git
 cd estateapp
 2️⃣ Install dependencies
@@ -71,12 +82,3 @@ npm run build
 
 ---
 
-🛠️ Tech Stack
-
-React (Vite)
-
-Tailwind CSS
-
-Firebase Auth
-
-Netlify (Hosting)
