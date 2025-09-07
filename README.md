@@ -1,12 +1,82 @@
-# React + Vite
+# 🏡 EstateApp – Real Estate Listings App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EstateApp is a modern React-based web application for browsing and managing property listings.  
+It includes authentication (Firebase), property search & filtering, and a clean responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 🔑 Firebase Authentication (Login / Signup / Logout)
+- 🏠 Property Listings with search filters
+- 📤 Easy deployment to Netlify
+- 🌐 Fast and modern React (Vite + Tailwind CSS)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Setup Instructions
+
+1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/estateapp.git
+cd estateapp
+2️⃣ Install dependencies
+npm install
+3️⃣ Run locally (development server)
+npm run dev
+Your app will be available at:
+👉 http://localhost:5173
+
+---
+
+🔥 Firebase Setup
+
+1. Go to Firebase Consoleand create a new project.
+
+2. Add a Web App to your Firebase project.
+
+3. Copy your Firebase config (apiKey, authDomain, projectId, etc.).
+
+4. In your project, create a file:
+
+// src/services/firebase.js
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID",
+};
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+
+---
+
+🌍 Deployment (Netlify)
+
+1. Build your app:
+npm run build
+
+2. A dist/ folder will be generated inside estateapp/.
+
+3. Go to Netlify Drop
+
+4. Drag & Drop the dist/ folder from estateapp.
+
+5. Done 🎉 – Netlify will give you a live URL.
+
+---
+
+🛠️ Tech Stack
+
+React (Vite)
+
+Tailwind CSS
+
+Firebase Auth
+
+Netlify (Hosting)
